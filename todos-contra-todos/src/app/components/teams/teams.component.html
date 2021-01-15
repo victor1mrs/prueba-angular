@@ -1,0 +1,7 @@
+<div>
+    <app-team 
+    *ngFor="let team of teams" 
+    [team]="team"
+    (deleteTeam)="deleteTeam($event)">
+    </app-team>
+</div>
