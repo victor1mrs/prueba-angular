@@ -9,6 +9,7 @@ import { TeamComponent } from './components/team/team.component';
 import { FixtureComponent } from './components/fixture/fixture.component';
 import { AddTeamComponent } from './components/add-team/add-team.component';
 import { FormsModule } from '@angular/forms';
+import { PipehtmlPipe } from './pipehtml.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     TeamsComponent,
     TeamComponent,
     FixtureComponent,
-    AddTeamComponent
+    AddTeamComponent,
+    PipehtmlPipe
   ],
   imports: [
     BrowserModule,

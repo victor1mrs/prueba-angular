@@ -1,6 +1,6 @@
 <div class="row" [ngClass]="{'selected': team.selected}">
     <div class="name">
-        <input type="checkbox" [checked]="team.selected" (change)="onToggle(team)">
+        <input class="mt-1 mx-1" type="checkbox" [checked]="team.selected" (change)="onToggle(team)">
         {{ team.name }}
     </div>
     <div class="actions">

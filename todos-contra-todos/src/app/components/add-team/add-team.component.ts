@@ -18,11 +18,14 @@ export class AddTeamComponent implements OnInit {
   }
 
   onSubmit(){
-    const team = new Team();
-    team.name = this.name;
+    if(this.name != ''){
+      const team = new Team();
+      team.name = this.name;
 
-    this.teamService.addTeam(team);
-    this.router.navigate(['/']);
+      this.teamService.addTeam(team);
+      this.router.navigate(['/']);
+    }
+    
   }
 
 }

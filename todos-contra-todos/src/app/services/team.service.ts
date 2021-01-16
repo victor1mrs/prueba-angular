@@ -12,6 +12,14 @@ export class TeamService {
     {
       name: 'Defensor',
       selected: true
+    },
+    {
+      name: 'Danubio',
+      selected: false
+    },
+    {
+      name: 'River',
+      selected: false
     }
   ];
   

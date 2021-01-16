@@ -11,6 +11,7 @@ export class TeamsComponent implements OnInit {
   
   teams: Team[] = [];
   cantidadTeams: number = this.teams.length;
+  generable:boolean = false;
   constructor(private teamService: TeamService) { }
 
   ngOnInit(): void {
@@ -23,12 +24,17 @@ export class TeamsComponent implements OnInit {
     var i = this.teams.indexOf( team );
     i !== -1 && this.teams.splice( i, 1 );
     this.cantidadTeams --;
+    this.generable = false;
   }
 
   getTeams(){
     return this.teams;
   }
 
+  nuevoFixture(){
+    this.generable = true;
+  }
+  
   getCantidadTeams(){
     return this.cantidadTeams;
   }
