@@ -23,12 +23,6 @@ export class TeamComponent implements OnInit {
 
   onToggle(team: Team){
     team.selected = !team.selected;
-    if(team.selected){
-      //habilitar el boton de borrar
-    }
-    else{
-      //deshabilitar el boton e borrar
-    }
   }
 
 }

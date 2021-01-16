@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TeamsComponent } from './components/teams/teams.component';
 import { TeamComponent } from './components/team/team.component';
+import { FixtureComponent } from './components/fixture/fixture.component';
+import { AddTeamComponent } from './components/add-team/add-team.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TeamsComponent,
-    TeamComponent
+    TeamComponent,
+    FixtureComponent,
+    AddTeamComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
